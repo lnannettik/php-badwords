@@ -24,7 +24,14 @@ echo strlen($stringa);
 echo "<br>";
 echo "<br>";
 
-$censored = str_replace('amet', '***', $stringa);
+$badword = $_GET['badword'];
+
+echo $badword;
+
+echo "<br>";
+echo "<br>";
+
+$censored = str_replace($badword, '***', $stringa);
 echo $censored;
 
 echo "<br>";
