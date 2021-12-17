@@ -24,12 +24,13 @@ echo strlen($stringa);
 echo "<br>";
 echo "<br>";
 
-echo str_replace('amet', '***', $stringa);
+$censored = str_replace('amet', '***', $stringa);
+echo $censored;
 
 echo "<br>";
 echo "<br>";
 
-echo strlen($stringa);
+echo strlen($censored);
 
 
 
